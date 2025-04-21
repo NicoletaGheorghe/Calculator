@@ -27,7 +27,7 @@ calcBtns.addEventListener("click", (b) =>{
         num2 = "";
         currentOp = "";
         isNum2 = false;
-        display.textContent = 0;
+        display.textContent = "0";
         return;
     }
     
@@ -59,7 +59,7 @@ calcBtns.addEventListener("click", (b) =>{
        if (num1 === "") return;
        currentOp = op;
        isNum2 = true;
-       display.textContent = "";
+       display.textContent = `${num1} ${opSymbols[op]}`;
        return;
     }
 
